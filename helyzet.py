@@ -1,6 +1,6 @@
 from classok import Jatekosok
 gepek = open("gep.txt", "r")
-gepek_lista = gepek.readlines()[1:] #első sor kihagyása
+gepek_lista = gepek.readlines()[1:] 
 jatekosok_lista = []
 
 
@@ -20,7 +20,7 @@ def adatgyujtes():
 
 def gepek_szama(lista):
     print("\n*** 1. feladat***\n")
-    gsz = len(lista) #A listában csak a gépek vannak, magyarázat nélkül
+    gsz = len(lista) 
     print(f"A gépek száma: {gsz}")
 
 
@@ -33,7 +33,7 @@ def atlag(lista):
         if tsz %2 == 0:
             parosgep:int = int(lista[n].id)
             paros_termek_id.append(parosgep)
-    atlag = round(sum(paros_termek_id) / len(paros_termek_id)) # a len() pont 39...
+    atlag = round(sum(paros_termek_id) / len(paros_termek_id)) 
     print (f"A páros teremszámú termek azonosító átlaga: {atlag}.")
 
 
